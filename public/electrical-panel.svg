@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="wall-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f4f8"/>
+      <stop offset="100%" stop-color="#dde4ec"/>
+    </linearGradient>
+    <linearGradient id="panel-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#1a252f"/>
+    </linearGradient>
+    <linearGradient id="inverter-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34495e"/>
+      <stop offset="100%" stop-color="#2c3e50"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wall background -->
+  <rect width="600" height="400" fill="url(#wall-bg)"/>
+  <!-- Wall texture tiles -->
+  <g stroke="rgba(0,0,0,0.06)" stroke-width="1" fill="none">
+    <line x1="0" y1="50" x2="600" y2="50"/>
+    <line x1="0" y1="100" x2="600" y2="100"/>
+    <line x1="0" y1="150" x2="600" y2="150"/>
+    <line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="250" x2="600" y2="250"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="0" y1="350" x2="600" y2="350"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="360" width="600" height="40" fill="#c8d0d8"/>
+  <rect x="0" y="360" width="600" height="3" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Main DB / Distribution Board -->
+  <rect x="60" y="60" width="180" height="260" rx="4" fill="url(#panel-body)" stroke="#1a252f" stroke-width="2"/>
+  <rect x="60" y="60" width="180" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <!-- DB label -->
+  <rect x="75" y="75" width="150" height="22" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <text x="150" y="91" fill="#f8b326" font-size="11" font-family="Arial" font-weight="bold" text-anchor="middle">MAIN DB PANEL</text>
+
+  <!-- MCBs in DB -->
+  <g>
+    <!-- MCB row 1 -->
+    <rect x="80" y="108" width="22" height="36" rx="2" fill="#e74c3c"/>
+    <rect x="84" y="112" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="88" y="124" width="6" height="16" rx="1" fill="#c0392b"/>
+    <text x="91" y="152" fill="white" font-size="7" font-family="Arial" text-anchor="middle">63A</text>
+
+    <rect x="108" y="108" width="22" height="36" rx="2" fill="#3498db"/>
+    <rect x="112" y="112" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="116" y="124" width="6" height="16" rx="1" fill="#2980b9"/>
+    <text x="119" y="152" fill="white" font-size="7" font-family="Arial" text-anchor="middle">32A</text>
+
+    <rect x="136" y="108" width="22" height="36" rx="2" fill="#3498db"/>
+    <rect x="140" y="112" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="144" y="124" width="6" height="16" rx="1" fill="#2980b9"/>
+    <text x="147" y="152" fill="white" font-size="7" font-family="Arial" text-anchor="middle">32A</text>
+
+    <rect x="164" y="108" width="22" height="36" rx="2" fill="#27ae60"/>
+    <rect x="168" y="112" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="172" y="124" width="6" height="16" rx="1" fill="#229954"/>
+    <text x="175" y="152" fill="white" font-size="7" font-family="Arial" text-anchor="middle">16A</text>
+
+    <rect x="192" y="108" width="22" height="36" rx="2" fill="#27ae60"/>
+    <rect x="196" y="112" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="200" y="124" width="6" height="16" rx="1" fill="#229954"/>
+    <text x="203" y="152" fill="white" font-size="7" font-family="Arial" text-anchor="middle">16A</text>
+
+    <!-- MCB row 2 -->
+    <rect x="80" y="158" width="22" height="36" rx="2" fill="#27ae60"/>
+    <rect x="84" y="162" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="88" y="174" width="6" height="16" rx="1" fill="#229954"/>
+    <text x="91" y="202" fill="white" font-size="7" font-family="Arial" text-anchor="middle">20A</text>
+
+    <rect x="108" y="158" width="22" height="36" rx="2" fill="#27ae60"/>
+    <rect x="112" y="162" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="116" y="174" width="6" height="16" rx="1" fill="#229954"/>
+    <text x="119" y="202" fill="white" font-size="7" font-family="Arial" text-anchor="middle">20A</text>
+
+    <rect x="136" y="158" width="22" height="36" rx="2" fill="#f39c12"/>
+    <rect x="140" y="162" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="144" y="174" width="6" height="16" rx="1" fill="#d68910"/>
+    <text x="147" y="202" fill="white" font-size="7" font-family="Arial" text-anchor="middle">SPD</text>
+
+    <rect x="164" y="158" width="22" height="36" rx="2" fill="#9b59b6"/>
+    <rect x="168" y="162" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="172" y="174" width="6" height="16" rx="1" fill="#8e44ad"/>
+    <text x="175" y="202" fill="white" font-size="7" font-family="Arial" text-anchor="middle">RCCB</text>
+
+    <rect x="192" y="158" width="22" height="36" rx="2" fill="#9b59b6"/>
+    <rect x="196" y="162" width="14" height="8" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="200" y="174" width="6" height="16" rx="1" fill="#8e44ad"/>
+    <text x="203" y="202" fill="white" font-size="7" font-family="Arial" text-anchor="middle">RCCB</text>
+  </g>
+
+  <!-- Bus bar -->
+  <rect x="75" y="205" width="150" height="6" rx="1" fill="#c0392b"/>
+  <rect x="75" y="215" width="150" height="6" rx="1" fill="#2980b9"/>
+  <rect x="75" y="225" width="150" height="6" rx="1" fill="#27ae60"/>
+
+  <!-- Wiring terminals -->
+  <g fill="#f8b326">
+    <rect x="80" y="240" width="8" height="8" rx="1"/>
+    <rect x="94" y="240" width="8" height="8" rx="1"/>
+    <rect x="108" y="240" width="8" height="8" rx="1"/>
+    <rect x="122" y="240" width="8" height="8" rx="1"/>
+    <rect x="136" y="240" width="8" height="8" rx="1"/>
+    <rect x="150" y="240" width="8" height="8" rx="1"/>
+    <rect x="164" y="240" width="8" height="8" rx="1"/>
+    <rect x="178" y="240" width="8" height="8" rx="1"/>
+    <rect x="192" y="240" width="8" height="8" rx="1"/>
+    <rect x="206" y="240" width="8" height="8" rx="1"/>
+    <rect x="220" y="240" width="8" height="8" rx="1"/>
+  </g>
+
+  <!-- Cables going down -->
+  <g stroke-width="3" fill="none">
+    <path d="M 84 248 Q 84 290 80 320" stroke="#e74c3c"/>
+    <path d="M 98 248 Q 98 290 94 320" stroke="#2980b9"/>
+    <path d="M 112 248 Q 112 290 108 320" stroke="#27ae60"/>
+    <path d="M 126 248 Q 126 290 122 320" stroke="#f39c12"/>
+    <path d="M 140 248 Q 140 290 136 320" stroke="#e74c3c"/>
+    <path d="M 154 248 Q 154 290 150 320" stroke="#2980b9"/>
+    <path d="M 168 248 Q 168 290 164 320" stroke="#27ae60"/>
+    <path d="M 182 248 Q 182 290 178 320" stroke="#f39c12"/>
+    <path d="M 196 248 Q 196 290 192 320" stroke="#e74c3c"/>
+    <path d="M 210 248 Q 210 290 206 320" stroke="#2980b9"/>
+    <path d="M 224 248 Q 224 290 220 320" stroke="#27ae60"/>
+  </g>
+
+  <!-- Cable conduit -->
+  <rect x="70" y="315" width="160" height="18" rx="4" fill="#7f8c8d"/>
+  <rect x="70" y="315" width="160" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Solar Inverter -->
+  <rect x="310" y="80" width="160" height="220" rx="6" fill="url(#inverter-body)" stroke="#1a252f" stroke-width="2"/>
+  <rect x="310" y="80" width="160" height="10" rx="6" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- Inverter brand label -->
+  <rect x="325" y="98" width="130" height="28" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="390" y="116" fill="#f8b326" font-size="13" font-family="Arial" font-weight="900" text-anchor="middle">SOLAR INVERTER</text>
+
+  <!-- Inverter display screen -->
+  <rect x="330" y="135" width="120" height="70" rx="4" fill="#0a1628"/>
+  <rect x="332" y="137" width="116" height="66" rx="3" fill="#0d1f35"/>
+  <!-- Display content -->
+  <text x="390" y="158" fill="#27ae60" font-size="11" font-family="monospace" font-weight="bold" text-anchor="middle">OUTPUT POWER</text>
+  <text x="390" y="178" fill="#f8b326" font-size="20" font-family="monospace" font-weight="bold" text-anchor="middle">4.8 kW</text>
+  <text x="390" y="196" fill="rgba(255,255,255,0.5)" font-size="9" font-family="monospace" text-anchor="middle">DC: 380V  AC: 230V</text>
+
+  <!-- Indicator LEDs -->
+  <circle cx="340" cy="220" r="5" fill="#27ae60"/>
+  <circle cx="358" cy="220" r="5" fill="#27ae60"/>
+  <circle cx="376" cy="220" r="5" fill="#f8b326"/>
+  <circle cx="394" cy="220" r="5" fill="rgba(255,255,255,0.2)"/>
+  <text x="340" y="234" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Arial" text-anchor="middle">PWR</text>
+  <text x="358" y="234" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Arial" text-anchor="middle">GRD</text>
+  <text x="376" y="234" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Arial" text-anchor="middle">GEN</text>
+  <text x="394" y="234" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Arial" text-anchor="middle">ERR</text>
+
+  <!-- DC input terminals -->
+  <rect x="330" y="248" width="50" height="20" rx="2" fill="rgba(255,255,255,0.06)"/>
+  <text x="355" y="262" fill="rgba(255,255,255,0.6)" font-size="8" font-family="Arial" text-anchor="middle">DC INPUT</text>
+  <rect x="390" y="248" width="50" height="20" rx="2" fill="rgba(255,255,255,0.06)"/>
+  <text x="415" y="262" fill="rgba(255,255,255,0.6)" font-size="8" font-family="Arial" text-anchor="middle">AC OUTPUT</text>
+
+  <!-- Cables from inverter -->
+  <path d="M 355 268 Q 355 310 350 340" stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <path d="M 365 268 Q 365 310 360 340" stroke="#2980b9" stroke-width="3" fill="none"/>
+  <path d="M 415 268 Q 415 310 410 340" stroke="#27ae60" stroke-width="3" fill="none"/>
+  <path d="M 425 268 Q 425 310 420 340" stroke="#f39c12" stroke-width="3" fill="none"/>
+
+  <!-- Earthing rod -->
+  <rect x="500" y="200" width="12" height="140" rx="2" fill="#c0392b"/>
+  <rect x="490" y="200" width="32" height="8" rx="2" fill="#e74c3c"/>
+  <text x="506" y="360" fill="#c0392b" font-size="9" font-family="Arial" font-weight="bold" text-anchor="middle">EARTH</text>
+  <!-- Earth symbol -->
+  <g stroke="#c0392b" stroke-width="2" fill="none">
+    <line x1="506" y1="345" x2="506" y2="355"/>
+    <line x1="498" y1="355" x2="514" y2="355"/>
+    <line x1="501" y1="359" x2="511" y2="359"/>
+    <line x1="504" y1="363" x2="508" y2="363"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="150" y="50" fill="#2c3e50" font-size="13" font-family="Arial" font-weight="bold" text-anchor="middle">Distribution Board</text>
+  <text x="390" y="68" fill="#2c3e50" font-size="13" font-family="Arial" font-weight="bold" text-anchor="middle">Solar Inverter Unit</text>
+
+  <!-- Rehoboth badge -->
+  <rect x="0" y="370" width="600" height="30" fill="rgba(16,35,63,0.9)"/>
+  <text x="300" y="390" fill="#f8b326" font-size="12" font-family="Arial" font-weight="bold" text-anchor="middle">REHOBOTH SOLAR · Professional Electrical Installation · Nagercoil</text>
+</svg>

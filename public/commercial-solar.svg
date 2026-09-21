@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="50%" stop-color="#0f2d4a"/>
+      <stop offset="100%" stop-color="#1a4a6e"/>
+    </linearGradient>
+    <linearGradient id="building" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#1a252f"/>
+    </linearGradient>
+    <linearGradient id="panel2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="100%" stop-color="#0d2137"/>
+    </linearGradient>
+    <linearGradient id="ground2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a2a"/>
+      <stop offset="100%" stop-color="#0f2218"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#sky2)"/>
+
+  <!-- Stars -->
+  <g fill="white" opacity="0.6">
+    <circle cx="50" cy="30" r="1.2"/><circle cx="120" cy="55" r="1"/><circle cx="200" cy="20" r="1.5"/>
+    <circle cx="280" cy="45" r="1"/><circle cx="380" cy="25" r="1.2"/><circle cx="480" cy="40" r="1"/>
+    <circle cx="560" cy="18" r="1.5"/><circle cx="640" cy="50" r="1"/><circle cx="720" cy="30" r="1.2"/>
+    <circle cx="760" cy="60" r="1"/><circle cx="90" cy="80" r="0.8"/><circle cx="450" cy="70" r="0.8"/>
+  </g>
+
+  <!-- Moon -->
+  <circle cx="720" cy="65" r="28" fill="#fef9e7" opacity="0.9"/>
+  <circle cx="732" cy="58" r="22" fill="url(#sky2)"/>
+
+  <!-- Background city skyline -->
+  <g fill="rgba(255,255,255,0.06)">
+    <rect x="0" y="220" width="60" height="160"/>
+    <rect x="65" y="200" width="45" height="180"/>
+    <rect x="115" y="240" width="35" height="140"/>
+    <rect x="620" y="210" width="50" height="170"/>
+    <rect x="675" y="190" width="40" height="190"/>
+    <rect x="720" y="230" width="55" height="150"/>
+    <rect x="780" y="215" width="20" height="165"/>
+  </g>
+  <!-- Building windows -->
+  <g fill="rgba(248,179,38,0.3)">
+    <rect x="8" y="230" width="8" height="6"/><rect x="20" y="230" width="8" height="6"/>
+    <rect x="8" y="244" width="8" height="6"/><rect x="20" y="244" width="8" height="6"/>
+    <rect x="72" y="210" width="8" height="6"/><rect x="84" y="210" width="8" height="6"/>
+    <rect x="72" y="224" width="8" height="6"/><rect x="84" y="224" width="8" height="6"/>
+    <rect x="628" y="220" width="8" height="6"/><rect x="640" y="220" width="8" height="6"/>
+    <rect x="682" y="200" width="8" height="6"/><rect x="694" y="200" width="8" height="6"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="390" width="800" height="90" fill="url(#ground2)"/>
+  <rect x="0" y="390" width="800" height="6" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- Main commercial building -->
+  <rect x="140" y="230" width="520" height="165" fill="url(#building)"/>
+  <!-- Building facade details -->
+  <g fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+    <rect x="155" y="248" width="35" height="50"/>
+    <rect x="198" y="248" width="35" height="50"/>
+    <rect x="241" y="248" width="35" height="50"/>
+    <rect x="284" y="248" width="35" height="50"/>
+    <rect x="327" y="248" width="35" height="50"/>
+    <rect x="370" y="248" width="35" height="50"/>
+    <rect x="413" y="248" width="35" height="50"/>
+    <rect x="456" y="248" width="35" height="50"/>
+    <rect x="499" y="248" width="35" height="50"/>
+    <rect x="542" y="248" width="35" height="50"/>
+    <rect x="585" y="248" width="35" height="50"/>
+    <rect x="628" y="248" width="18" height="50"/>
+  </g>
+  <!-- Lit windows -->
+  <g fill="rgba(248,179,38,0.5)">
+    <rect x="157" y="250" width="31" height="22"/><rect x="200" y="250" width="31" height="22"/>
+    <rect x="286" y="250" width="31" height="22"/><rect x="372" y="250" width="31" height="22"/>
+    <rect x="458" y="250" width="31" height="22"/><rect x="544" y="250" width="31" height="22"/>
+    <rect x="157" y="278" width="31" height="16"/><rect x="243" y="278" width="31" height="16"/>
+    <rect x="415" y="278" width="31" height="16"/><rect x="501" y="278" width="31" height="16"/>
+    <rect x="587" y="278" width="31" height="16"/>
+  </g>
+
+  <!-- Rooftop parapet -->
+  <rect x="135" y="222" width="530" height="14" fill="#34495e"/>
+  <rect x="135" y="222" width="530" height="3" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Solar panels on flat roof - large commercial array -->
+  <!-- Row 1 -->
+  <g fill="url(#panel2)" stroke="#2a5a8c" stroke-width="0.8">
+    <rect x="155" y="148" width="58" height="38" rx="1"/>
+    <rect x="218" y="148" width="58" height="38" rx="1"/>
+    <rect x="281" y="148" width="58" height="38" rx="1"/>
+    <rect x="344" y="148" width="58" height="38" rx="1"/>
+    <rect x="407" y="148" width="58" height="38" rx="1"/>
+    <rect x="470" y="148" width="58" height="38" rx="1"/>
+    <rect x="533" y="148" width="58" height="38" rx="1"/>
+    <!-- Row 2 -->
+    <rect x="155" y="192" width="58" height="38" rx="1"/>
+    <rect x="218" y="192" width="58" height="38" rx="1"/>
+    <rect x="281" y="192" width="58" height="38" rx="1"/>
+    <rect x="344" y="192" width="58" height="38" rx="1"/>
+    <rect x="407" y="192" width="58" height="38" rx="1"/>
+    <rect x="470" y="192" width="58" height="38" rx="1"/>
+    <rect x="533" y="192" width="58" height="38" rx="1"/>
+  </g>
+  <!-- Panel grid lines -->
+  <g stroke="#2a5a8c" stroke-width="0.5" opacity="0.7">
+    <!-- Row 1 verticals -->
+    <line x1="174" y1="148" x2="174" y2="186"/><line x1="193" y1="148" x2="193" y2="186"/>
+    <line x1="237" y1="148" x2="237" y2="186"/><line x1="256" y1="148" x2="256" y2="186"/>
+    <line x1="300" y1="148" x2="300" y2="186"/><line x1="319" y1="148" x2="319" y2="186"/>
+    <line x1="363" y1="148" x2="363" y2="186"/><line x1="382" y1="148" x2="382" y2="186"/>
+    <line x1="426" y1="148" x2="426" y2="186"/><line x1="445" y1="148" x2="445" y2="186"/>
+    <line x1="489" y1="148" x2="489" y2="186"/><line x1="508" y1="148" x2="508" y2="186"/>
+    <line x1="552" y1="148" x2="552" y2="186"/><line x1="571" y1="148" x2="571" y2="186"/>
+    <!-- Row 1 horizontals -->
+    <line x1="155" y1="161" x2="213" y2="161"/><line x1="155" y1="174" x2="213" y2="174"/>
+    <line x1="218" y1="161" x2="276" y2="161"/><line x1="218" y1="174" x2="276" y2="174"/>
+    <line x1="281" y1="161" x2="339" y2="161"/><line x1="281" y1="174" x2="339" y2="174"/>
+    <line x1="344" y1="161" x2="402" y2="161"/><line x1="344" y1="174" x2="402" y2="174"/>
+    <line x1="407" y1="161" x2="465" y2="161"/><line x1="407" y1="174" x2="465" y2="174"/>
+    <line x1="470" y1="161" x2="528" y2="161"/><line x1="470" y1="174" x2="528" y2="174"/>
+    <line x1="533" y1="161" x2="591" y2="161"/><line x1="533" y1="174" x2="591" y2="174"/>
+  </g>
+  <!-- Panel shine -->
+  <g fill="rgba(255,255,255,0.06)">
+    <rect x="157" y="150" width="22" height="10" rx="1"/>
+    <rect x="220" y="150" width="22" height="10" rx="1"/>
+    <rect x="283" y="150" width="22" height="10" rx="1"/>
+    <rect x="346" y="150" width="22" height="10" rx="1"/>
+    <rect x="409" y="150" width="22" height="10" rx="1"/>
+    <rect x="472" y="150" width="22" height="10" rx="1"/>
+    <rect x="535" y="150" width="22" height="10" rx="1"/>
+  </g>
+
+  <!-- Panel mounting brackets -->
+  <g fill="#1a252f">
+    <rect x="180" y="183" width="6" height="12"/><rect x="240" y="183" width="6" height="12"/>
+    <rect x="305" y="183" width="6" height="12"/><rect x="368" y="183" width="6" height="12"/>
+    <rect x="431" y="183" width="6" height="12"/><rect x="494" y="183" width="6" height="12"/>
+    <rect x="557" y="183" width="6" height="12"/>
+  </g>
+
+  <!-- Inverter units on roof -->
+  <rect x="620" y="160" width="28" height="40" rx="2" fill="#2c3e50" stroke="#1a252f" stroke-width="1.5"/>
+  <rect x="624" y="165" width="20" height="12" rx="1" fill="#27ae60"/>
+  <text x="626" y="174" fill="white" font-size="7" font-family="monospace">15kW</text>
+  <circle cx="630" cy="188" r="3" fill="#f8b326"/>
+  <circle cx="640" cy="188" r="3" fill="#27ae60"/>
+
+  <rect x="655" y="160" width="28" height="40" rx="2" fill="#2c3e50" stroke="#1a252f" stroke-width="1.5"/>
+  <rect x="659" y="165" width="20" height="12" rx="1" fill="#27ae60"/>
+  <text x="661" y="174" fill="white" font-size="7" font-family="monospace">15kW</text>
+  <circle cx="665" cy="188" r="3" fill="#f8b326"/>
+  <circle cx="675" cy="188" r="3" fill="#27ae60"/>
+
+  <!-- Energy stats panel -->
+  <rect x="30" y="140" width="100" height="110" rx="6" fill="rgba(10,20,40,0.85)" stroke="rgba(248,179,38,0.4)" stroke-width="1.5"/>
+  <text x="80" y="162" fill="#f8b326" font-size="11" font-family="Arial" font-weight="bold" text-anchor="middle">TODAY</text>
+  <text x="80" y="185" fill="white" font-size="22" font-family="Arial" font-weight="900" text-anchor="middle">87</text>
+  <text x="80" y="200" fill="rgba(255,255,255,0.6)" font-size="10" font-family="Arial" text-anchor="middle">kWh generated</text>
+  <line x1="40" y1="210" x2="120" y2="210" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="80" y="228" fill="#27ae60" font-size="11" font-family="Arial" font-weight="bold" text-anchor="middle">₹ 1,044 saved</text>
+  <text x="80" y="242" fill="rgba(255,255,255,0.5)" font-size="9" font-family="Arial" text-anchor="middle">@ ₹12/unit</text>
+
+  <!-- Branding -->
+  <rect x="0" y="420" width="800" height="60" fill="rgba(10,20,40,0.8)"/>
+  <text x="40" y="448" fill="#f8b326" font-size="20" font-family="Arial" font-weight="900" letter-spacing="2">REHOBOTH SOLAR</text>
+  <text x="40" y="468" fill="rgba(255,255,255,0.65)" font-size="12" font-family="Arial">Commercial Solar Systems · Nagercoil · Kanyakumari District</text>
+  <text x="720" y="448" fill="#27ae60" font-size="13" font-family="Arial" font-weight="bold" text-anchor="middle">30 kW System</text>
+  <text x="720" y="466" fill="rgba(255,255,255,0.55)" font-size="10" font-family="Arial" text-anchor="middle">14 panels installed</text>
+</svg>
