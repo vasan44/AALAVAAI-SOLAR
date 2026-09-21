@@ -50,8 +50,8 @@ h3 { font-size: 19px; line-height: 1.25; margin-bottom: 10px; }
 /* ── HEADER ── */
 .site-header {
   align-items: center;
-  background: #080f1d;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: transparent;
+  border-bottom: 1px solid transparent;
   color: var(--white);
   display: grid;
   grid-template-columns: minmax(220px, auto) 1fr auto;
